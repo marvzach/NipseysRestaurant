@@ -1,0 +1,64 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farnoosh Salon</title>
+</head>
+
+<body>
+  <div class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Java Cut</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="https://farnoosh63.github.io/portfolio/">About me</a></li>
+              <li><a href="mailto:farnoosh@pdx.edu">Contact me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <img class="first-slide" src="http://img.infonet.vn/t660/Uploaded/lehien/2014_10_20/toc.jpg">
+  </div>
+
+  <div class="container">
+    <h2>Java Cut and Spa</h2>
+    <p>Java Cut and Spa is proud that has a very secure database to keep us stay connected with all out clients with their updated information.</p>
+
+
+    <h1> update client : $client.getName() here </h1>
+    <form action="/clients/$client.getId()" method="post">
+      <div class="form-group">
+        <label for="name">newName</label>
+        <input id="name" name="name" type="text" class="form-control">
+      </div>
+
+      <button type="submit" class="btn btn-success">Update name</button>
+    </form>
+
+    <a type="button" href="/" class="btn btn-warning">Add more stylist</a>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Farnoosh Johnson Code Review3, Java class @
+        <a href="http://www.epicodus.com/">epicodus</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
