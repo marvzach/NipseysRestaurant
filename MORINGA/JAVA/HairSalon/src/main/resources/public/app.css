@@ -1,0 +1,49 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #ffecb3;
+}
+
+
+.card-img-top {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+}
+
+.carousel-item {
+  height: 400px;
+  background-size: cover;
+}
+.carousel-caption{
+  color: black;
+}
+.intro-heading{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  color: black;
+  
+}
+span{
+  font-family: 'Nunito', sans-serif;
+  color: black;
+}
+.foot{
+  margin-top: 50px;
+  
+}
+
+.colorlib{
+  color: aliceblue;
+  padding: 20px;
+}
+.ok{
+  height: 300px;
+}
+.logo{
+  height: 150px;
+  widows: 150px;
+  margin-top: 20px;
+  margin-left: 50px;
+
+}
