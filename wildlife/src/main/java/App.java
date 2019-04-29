@@ -18,18 +18,18 @@ public class App {
     
         setPort(port);
 
-//         staticFileLocation("/public");
-//         String layout = "templates/layout.vtl";
+        staticFileLocation("/public");
+        String layout = "templates/layout.vtl";
 
 
-//          get("/", (request, response) -> {
-//       Map<String, Object> model = new HashMap<String, Object>();
-//       model.put("animals", Animal.all());
-//       model.put("endangeredAnimals", Endangered.all());
-//       model.put("sightings", Sighting.all());
-//       model.put("template", "templates/index.vtl");
-//       return new ModelAndView(model, layout);
-//     }, new VelocityTemplateEngine());
+         get("/", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("animals", Animal.all());
+      model.put("endangeredAnimals", Endangered.all());
+      model.put("sightings", Sighting.all());
+      model.put("template", "templates/index.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
 
 
 //          get("/sightings", (request, response) -> {
