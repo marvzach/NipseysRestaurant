@@ -56,20 +56,20 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-//     post("/sighting", (request, response) -> {
-//       Map<String, Object> model = new HashMap<String, Object>();
-//       String rangerName = request.queryParams("rangerName");
-//       int animalIdSelected = Integer.parseInt(request.queryParams("animalSelected"));
-//       String location = request.queryParams("location");
-//       Sighting sighting = new Sighting(animalIdSelected, location, rangerName);
-//       sighting.save();
-//       model.put("sighting", sighting);
-//       model.put("animals", Animal.all());
-//       String animal = Animal.find(animalIdSelected).getName();
-//       model.put("animal", animal);
-//       model.put("template", "templates/success.vtl");
-//       return new ModelAndView(model, layout);
-//     }, new VelocityTemplateEngine());
+    post("/sighting", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      String rangerName = request.queryParams("rangerName");
+      int animalIdSelected = Integer.parseInt(request.queryParams("animalSelected"));
+      String location = request.queryParams("location");
+      Sighting sighting = new Sighting(animalIdSelected, location, rangerName);
+      sighting.save();
+      model.put("sighting", sighting);
+      model.put("animals", Animal.all());
+      String animal = Animal.find(animalIdSelected).getName();
+      model.put("animal", animal);
+      model.put("template", "templates/success.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
 
 //     get("/animal/new", (request, response) -> {
 //       Map<String, Object> model = new HashMap<String, Object>();
