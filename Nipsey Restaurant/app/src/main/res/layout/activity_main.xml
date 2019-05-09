@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/appNameTextView"
+        android:text="Nipsey's Marathon Restaurant"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="350dp"
+        android:text="Enter your location below"
+        android:textColor="#ffff"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="375dp"
+        android:hint="location"
+        android:textColor="#ffff"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Find Restaurants"
+        android:id="@+id/findbutton"
+        android:layout_marginTop="526dp"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        />
+
+    <!--<RatingBar-->
+        <!--android:id="@+id/ratingBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:background="#3456"-->
+        <!--/>-->
+
+</RelativeLayout>
